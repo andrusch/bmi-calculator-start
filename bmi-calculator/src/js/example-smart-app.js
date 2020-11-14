@@ -84,9 +84,9 @@
 
                     // Weight
                     p.weight = getQuantityValueAndUnit(weight[0]);
-
+ 
                     // Calculate BMI
-                    // p.bmi = (getQuantityValue(weight[0]) / (Math.pow((getQuantityValue(height[0]) / 100), 2))).toFixed(1);
+                    p.bmi = (getQuantityValue(weight[0]) / (Math.pow((getQuantityValue(height[0]) / 100), 2))).toFixed(1);
 
                     ret.resolve(p);
 
